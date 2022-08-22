@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gKvTZZA2T8xUCYZU4MA7+tcdsZULMjKkZEg5LvxaxjJyCIqifUdfbbLAvo91U35D36XPfdoUL13ABAYXdj7GTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shens61\\Desktop\\GA\\GA.Library\\GA.Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shens61\\.nuget\\packages\\geneticsharp\\2.6.0\\geneticsharp.2.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

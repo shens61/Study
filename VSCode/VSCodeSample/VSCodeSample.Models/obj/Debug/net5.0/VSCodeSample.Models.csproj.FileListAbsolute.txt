@@ -1,0 +1,12 @@
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\bin\Debug\net5.0\VSCodeSample.Models.deps.json
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\bin\Debug\net5.0\VSCodeSample.Models.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\bin\Debug\net5.0\ref\VSCodeSample.Models.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\bin\Debug\net5.0\VSCodeSample.Models.pdb
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.csproj.AssemblyReference.cache
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.AssemblyInfoInputs.cache
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.AssemblyInfo.cs
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.csproj.CoreCompileInputs.cache
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\ref\VSCodeSample.Models.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.Models\obj\Debug\net5.0\VSCodeSample.Models.pdb

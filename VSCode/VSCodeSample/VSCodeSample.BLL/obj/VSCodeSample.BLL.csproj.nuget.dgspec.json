@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.BLL\\VSCodeSample.BLL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.BLL\\VSCodeSample.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.BLL\\VSCodeSample.BLL.csproj",
+        "projectName": "VSCodeSample.BLL",
+        "projectPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.BLL\\VSCodeSample.BLL.csproj",
+        "packagesPath": "C:\\Users\\shens61\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\shens61\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/jblprd/_packaging/analytics-nugets%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.DAL\\VSCodeSample.DAL.csproj": {
+                "projectPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.DAL\\VSCodeSample.DAL.csproj"
+              },
+              "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj": {
+                "projectPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.DAL\\VSCodeSample.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.DAL\\VSCodeSample.DAL.csproj",
+        "projectName": "VSCodeSample.DAL",
+        "projectPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.DAL\\VSCodeSample.DAL.csproj",
+        "packagesPath": "C:\\Users\\shens61\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\shens61\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/jblprd/_packaging/analytics-nugets%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj": {
+                "projectPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj",
+        "projectName": "VSCodeSample.Models",
+        "projectPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\VSCodeSample.Models.csproj",
+        "packagesPath": "C:\\Users\\shens61\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shens61\\Desktop\\VSCodeSample\\VSCodeSample.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\shens61\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/jblprd/_packaging/analytics-nugets%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

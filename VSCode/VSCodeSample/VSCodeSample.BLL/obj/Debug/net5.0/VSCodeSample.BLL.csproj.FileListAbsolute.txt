@@ -1,0 +1,17 @@
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.BLL.deps.json
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.BLL.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\ref\VSCodeSample.BLL.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.BLL.pdb
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.DAL.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.Models.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.Models.pdb
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\bin\Debug\net5.0\VSCodeSample.DAL.pdb
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.csproj.AssemblyReference.cache
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.AssemblyInfoInputs.cache
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.AssemblyInfo.cs
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.csproj.CoreCompileInputs.cache
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.csproj.CopyComplete
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\ref\VSCodeSample.BLL.dll
+C:\Users\shens61\Desktop\VSCodeSample\VSCodeSample.BLL\obj\Debug\net5.0\VSCodeSample.BLL.pdb

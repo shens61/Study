@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "GeneticSharp/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GeneticSharp.Domain.dll": {},
+          "lib/netstandard2.0/GeneticSharp.Infrastructure.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GeneticSharp.Domain.dll": {},
+          "lib/netstandard2.0/GeneticSharp.Infrastructure.Framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GeneticSharp/2.6.0": {
+      "sha512": "mCloV8NtnKR/SYJViRKAH5zI/D/NrTf3kJIWFyAWelW++fbCHeCP/P/xCMaTVfaDnZD2FeYDohk17cRjWyBy/Q==",
+      "type": "package",
+      "path": "geneticsharp/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "geneticsharp.2.6.0.nupkg.sha512",
+        "geneticsharp.nuspec",
+        "lib/net462/GeneticSharp.Domain.dll",
+        "lib/net462/GeneticSharp.Infrastructure.Framework.dll",
+        "lib/netstandard2.0/GeneticSharp.Domain.dll",
+        "lib/netstandard2.0/GeneticSharp.Infrastructure.Framework.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "GeneticSharp >= 2.6.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\shens61\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\shens61\\Desktop\\GA\\GA.Library\\GA.Library.csproj",
+      "projectName": "GA.Library",
+      "projectPath": "C:\\Users\\shens61\\Desktop\\GA\\GA.Library\\GA.Library.csproj",
+      "packagesPath": "C:\\Users\\shens61\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shens61\\Desktop\\GA\\GA.Library\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\shens61\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/jblprd/297a283a-110d-4c95-92f4-1977f07af525/_packaging/ems-nuget/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "dependencies": {
+          "GeneticSharp": {
+            "target": "Package",
+            "version": "[2.6.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

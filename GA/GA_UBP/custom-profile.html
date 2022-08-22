@@ -1,0 +1,234 @@
+<!--
+    THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=custom-profile&random=hn0jldomyf
+-->
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body style="height: 100%; margin: 0">
+        <div id="container" style="height: 100%"></div>
+
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js"></script>
+        <!-- Uncomment this line if you want to dataTool extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/extension/dataTool.min.js"></script>
+        -->
+        <!-- Uncomment this line if you want to use gl extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+        -->
+        <!-- Uncomment this line if you want to echarts-stat extension
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+        -->
+        <!-- Uncomment this line if you want to use map
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/map/js/china.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/map/js/world.js"></script>
+        -->
+        <!-- Uncomment these two lines if you want to use bmap extension
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=<Your Key Here>"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@{{version}}/dist/extension/bmap.min.js"></script>
+        -->
+
+        <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+
+
+var data = [];
+var startTime = +new Date('2022-02-10 7:15');
+var categories = [
+  'Bay 03-1',
+  'Bay 01-1',
+  'Bay 06-2',
+  'Bay 05-1',
+  'Bay 03-2',
+  'Bay 05-2',
+  'Bay 06A-1',
+  'BAY 08-1',
+  'BAY 09-1',
+  'Bay 08A-2',
+  'Bay 21-1'
+];
+
+
+var workOrders = [{"ID":0,"Model":"090018A.103","Qty":30,"Resource":"Bay 03-1","ProcessName":"TOP","StartTime":"2022-02-10T18:10:10.8542492","EndTime":"2022-02-10T18:11:54.6916168","Duration":1.7306227933333334},{"ID":0,"Model":"ROR1016041/40R1C","Qty":704,"Resource":"Bay 03-1","ProcessName":"TOP","StartTime":"2022-02-10T11:28:26.2439151","EndTime":"2022-02-10T13:36:46.217179","Duration":128.33288773166666},{"ID":0,"Model":"ROR1016062/662R1E","Qty":1080,"Resource":"Bay 03-1","ProcessName":"TOP","StartTime":"2022-02-10T14:06:46.217179","EndTime":"2022-02-10T17:40:10.8542492","Duration":213.41061783666666},{"ID":0,"Model":"ROR1018480/25R1E","Qty":459,"Resource":"Bay 03-1","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T10:58:26.2439151","Duration":223.437398585},{"ID":0,"Model":"ROR1018480/66R1B","Qty":1131,"Resource":"Bay 03-1","ProcessName":"TOP","StartTime":"2022-02-10T18:41:54.6916168","EndTime":"2022-02-11T03:51:04.970006","Duration":549.1713064866667},{"ID":0,"Model":"ROA1286568/3R1B","Qty":102,"Resource":"Bay 08A-2","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T10:29:51.2888436","Duration":194.85481406},{"ID":0,"Model":"ROA1286568/3R1B","Qty":102,"Resource":"Bay 03-2","ProcessName":"BOT","StartTime":"2022-02-10T10:29:51.2888436","EndTime":"2022-02-10T12:04:10.9681674","Duration":94.32798873},{"ID":0,"Model":"ROA1287007/15R1D","Qty":184,"Resource":"Bay 01-1","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T11:30:21.9837157","Duration":255.36639526166667},{"ID":0,"Model":"ROA1287007/15R1D","Qty":184,"Resource":"Bay 01-1","ProcessName":"BOT","StartTime":"2022-02-10T11:30:21.9837157","EndTime":"2022-02-10T17:42:08.0181984","Duration":371.7672413783333},{"ID":0,"Model":"ROR1010064/08R1C","Qty":1050,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-11T05:56:49.8845797","EndTime":"2022-02-11T14:09:14.0601565","Duration":492.40292628},{"ID":0,"Model":"ROR1010065/28R1C","Qty":1000,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T21:36:31.4108856","EndTime":"2022-02-11T05:26:49.8845797","Duration":470.30789490166666},{"ID":0,"Model":"ROR1016040/07R1E","Qty":1080,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T09:42:11.25","EndTime":"2022-02-10T12:39:47.7425667","Duration":177.608209445},{"ID":0,"Model":"ROR1017007/08LR1E","Qty":250,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T09:12:11.25","Duration":117.1875},{"ID":0,"Model":"ROR1017007/08RR1E","Qty":232,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T15:27:29.2234007","EndTime":"2022-02-10T17:17:01.8751257","Duration":109.54419541666667},{"ID":0,"Model":"ROR1017007/2028R1E","Qty":232,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T19:18:40.2028028","EndTime":"2022-02-10T21:06:31.4108856","Duration":107.85346804666666},{"ID":0,"Model":"ROR1017007/2820R1E","Qty":230,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T13:09:47.7425667","EndTime":"2022-02-10T14:57:29.2234007","Duration":107.69134723333333},{"ID":0,"Model":"ROR1017189/1R1C","Qty":201,"Resource":"Bay 05-1","ProcessName":"TOP","StartTime":"2022-02-10T17:47:01.8751257","EndTime":"2022-02-10T18:48:40.2028028","Duration":61.638794618333336},{"ID":0,"Model":"ROA1286621/03BR1G","Qty":240,"Resource":"BAY 08-1","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T11:08:51.440612","Duration":233.85734353333334},{"ID":0,"Model":"ROA1286621/03BR1G","Qty":240,"Resource":"BAY 08-1","ProcessName":"BOT","StartTime":"2022-02-10T11:08:51.440612","EndTime":"2022-02-10T17:15:09.4622625","Duration":366.30036084166665},{"ID":0,"Model":"ROA1286957/5R2A","Qty":120,"Resource":"Bay 05-2","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T10:08:18.6135181","Duration":173.31022530166666},{"ID":0,"Model":"ROA1286957/5R2A","Qty":120,"Resource":"Bay 05-2","ProcessName":"BOT","StartTime":"2022-02-10T10:08:18.6135181","EndTime":"2022-02-10T14:51:03.7407565","Duration":282.75212064},{"ID":0,"Model":"MAVPBA1072921AA","Qty":16,"Resource":"Bay 06A-1","ProcessName":"TOP","StartTime":"2022-02-10T08:04:45.1485148","EndTime":"2022-02-10T08:13:13.5512827","Duration":8.473379465},{"ID":0,"Model":"MAVPBA1072921AA","Qty":16,"Resource":"Bay 06A-1","ProcessName":"BOT","StartTime":"2022-02-10T08:13:13.5512827","EndTime":"2022-02-10T08:18:48.0460562","Duration":5.574912891666667},{"ID":0,"Model":"NLPBA001669D","Qty":24,"Resource":"Bay 06A-1","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T07:19:45.1485148","Duration":4.752475246666667},{"ID":0,"Model":"ROA1282730/2R1E","Qty":244,"Resource":"Bay 06-2","ProcessName":"TOP","StartTime":"2022-02-10T08:47:14.1154633","EndTime":"2022-02-10T10:14:23.4339373","Duration":87.1553079},{"ID":0,"Model":"ROA1282730/2R1E","Qty":244,"Resource":"Bay 06-2","ProcessName":"BOT","StartTime":"2022-02-10T11:32:25.5404426","EndTime":"2022-02-10T12:18:24.2650977","Duration":45.97874425166667},{"ID":0,"Model":"ROA1282816/1R1E","Qty":240,"Resource":"Bay 06-2","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T07:58:38.2452907","Duration":43.637421511666666},{"ID":0,"Model":"ROR1010046/3R1C","Qty":48,"Resource":"Bay 06-2","ProcessName":"TOP","StartTime":"2022-02-10T11:00:23.0599262","EndTime":"2022-02-10T11:12:25.5404426","Duration":12.04134194},{"ID":0,"Model":"ROR102024/1R1B","Qty":30,"Resource":"Bay 06-2","ProcessName":"TOP","StartTime":"2022-02-10T10:34:23.4339373","EndTime":"2022-02-10T10:40:23.0599262","Duration":5.9937664816666665},{"ID":0,"Model":"ROR10204/1R1A","Qty":32,"Resource":"Bay 06-2","ProcessName":"TOP","StartTime":"2022-02-10T08:18:38.2452907","EndTime":"2022-02-10T08:27:14.1154633","Duration":8.59783621},{"ID":0,"Model":"ROA1286602/07R1C","Qty":200,"Resource":"Bay 08A-2","ProcessName":"TOP","StartTime":"2022-02-10T11:24:51.2888436","EndTime":"2022-02-10T14:59:15.7828401","Duration":214.408233275},{"ID":0,"Model":"ROA1286602/07R1C","Qty":200,"Resource":"Bay 08A-2","ProcessName":"BOT","StartTime":"2022-02-10T14:59:15.7828401","EndTime":"2022-02-10T22:40:56.613865","Duration":461.68051708166666},{"ID":0,"Model":"ROA1286240/1R1F","Qty":260,"Resource":"BAY 09-1","ProcessName":"TOP","StartTime":"2022-02-10T07:15:00","EndTime":"2022-02-10T13:08:42.5648467","Duration":353.70941411166666},{"ID":0,"Model":"ROA1286240/1R1F","Qty":260,"Resource":"BAY 09-1","ProcessName":"BOT","StartTime":"2022-02-10T13:08:42.5648467","EndTime":"2022-02-10T16:14:26.483149","Duration":185.731971705}]; // Generate mock data
+
+workOrders.forEach(function (p, index) {
+  var categorieIndex = categories.indexOf(p.Resource);
+
+  if (categorieIndex < 0) {
+    categories.push(p.Resource);
+    categorieIndex = categories.indexOf(p.Resource);
+  }
+
+  data.push({
+    name: p.Model,
+    value: [
+      categorieIndex,
+      +new Date(p.StartTime),
+      +new Date(p.EndTime),
+      p.Qty,
+	  p.ProcessName
+    ],
+    itemStyle: {
+      normal: {
+        color:
+          'rgb(' +
+          Math.floor(Math.random() * 256) +
+          ',' +
+          Math.floor(Math.random() * 256) +
+          ',' +
+          Math.floor(Math.random() * 256) +
+          ')'
+      }
+    }
+  });
+});
+
+function renderItem(params, api) {
+  var categoryIndex = api.value(0);
+  var start = api.coord([api.value(1), categoryIndex]);
+  var end = api.coord([api.value(2), categoryIndex]);
+  var height = api.size([0, 1])[1] * 0.6;
+  var rectShape = echarts.graphic.clipRectByRect(
+    {
+      x: start[0],
+      y: start[1] - height / 2,
+      width: end[0] - start[0],
+      height: height
+    },
+    {
+      x: params.coordSys.x,
+      y: params.coordSys.y,
+      width: params.coordSys.width,
+      height: params.coordSys.height
+    }
+  );
+  return (
+    rectShape && {
+      type: 'rect',
+      transition: ['shape'],
+      shape: rectShape,
+      style: api.style()
+    }
+  );
+}
+option = {
+  tooltip: {
+    formatter: function (params) {
+      return (
+        params.marker +
+        params.name +
+        ' , ' + params.value[4]
+        + ' , '+ params.value[3] +
+        ' , ' +
+        dateTimeConvertFromTicks(params.value[1]) +
+        '~' +
+        dateTimeConvertFromTicks(params.value[2])
+      );
+    }
+  },
+  title: {
+    text: 'work orders',
+    left: 'center'
+  },
+  dataZoom: [
+    {
+      type: 'slider',
+      filterMode: 'weakFilter',
+      showDataShadow: false,
+      top: '95%',
+      labelFormatter: ''
+    },
+    {
+      type: 'inside',
+      filterMode: 'weakFilter'
+    }
+  ],
+  grid: {
+    height: '85%'
+  },
+  xAxis: {
+    min: startTime,
+    scale: true,
+    axisLabel: {
+      formatter: function (val) {
+        return dateTimeConvertFromTicks(val);
+      }
+    }
+  },
+  yAxis: {
+    data: categories
+  },
+  series: [
+    {
+      type: 'custom',
+      renderItem: renderItem,
+      itemStyle: {
+        opacity: 0.8
+      },
+      encode: {
+        x: [1, 2],
+        y: 0
+      },
+      data: data
+    }
+  ]
+};
+
+function dateTimeConvertFromTicks(ticks) {
+  return new Date(parseInt(ticks, 10)).Format('yyyy-MM-dd hh:mm:ss');
+}
+
+Date.prototype.Format = function (fmt) {
+  var o = {
+    'M+': this.getMonth() + 1,
+    //月份
+
+    'd+': this.getDate(),
+    //日
+
+    'h+': this.getHours(),
+    //小时
+
+    'm+': this.getMinutes(),
+    //分
+
+    's+': this.getSeconds(),
+    //秒
+
+    'q+': Math.floor((this.getMonth() + 3) / 3),
+    //季度
+
+    S: this.getMilliseconds() //毫秒
+  };
+  if (/(y+)/.test(fmt)) {
+    fmt = fmt.replace(
+      RegExp.$1,
+      (this.getFullYear() + '').substr(4 - RegExp.$1.length)
+    );
+  }
+  for (var k in o) {
+    if (new RegExp('(' + k + ')').test(fmt)) {
+      fmt = fmt.replace(
+        RegExp.$1,
+        RegExp.$1.length == 1 ? o[k] : ('00' + o[k]).substr(('' + o[k]).length)
+      );
+    }
+  }
+  return fmt;
+};
+
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+        </script>
+    </body>
+</html>
+    
